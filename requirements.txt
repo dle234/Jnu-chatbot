@@ -1,0 +1,11 @@
+streamlit
+pytesseract
+Pillow # 이미지 처리에 필요해요.
+requests
+selenium
+sentence-transformers
+pinecone-client
+langchain
+langchain-core
+pandas
+google-generativeai

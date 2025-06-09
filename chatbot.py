@@ -11,8 +11,8 @@ from selenium.webdriver.chrome.options import Options
 import os
 from PIL import Image
 
-pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
-os.environ['TESSDATA_PREFIX'] = '/opt/homebrew/share/tessdata'
+# pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
+# os.environ['TESSDATA_PREFIX'] = '/opt/homebrew/share/tessdata'
 chrome_options = Options()
 chrome_options.add_argument("--headless") 
 chrome_options.add_argument("--no-sandbox")
