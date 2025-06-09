@@ -198,7 +198,6 @@ import json
 
 # Pinecone 클라이언트 초기화
 embedding_model = SentenceTransformer("snunlp/KR-SBERT-V40K-klueNLI-augSTS")
-PINECONE_API_KEY = "pcsk_4YSS2p_8esQ7wFJKZWuEGQEcYXFS5EAdKtsbg5fmGvrZYRrQv6FUxq7F1mUjbzMDcg7TtT"
 INDEX_NAME = "jnu-notice"
 
 # 청킹한 데이터 임베딩 후 Pinecone 업로드
@@ -242,8 +241,13 @@ import google.generativeai as genai
 from tqdm import tqdm
 # 언어모델 연결
 
+import streamlit as st
+
+# Streamlit secrets에서 API 키 불러오기
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
+
 # Gemini 설정
-GOOGLE_API_KEY = "AIzaSyBwHvoTXkx1xPtBugcf-Pt96azW3EIruxc"
 genai.configure(api_key=GOOGLE_API_KEY)
 gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 

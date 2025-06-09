@@ -1,3 +1,7 @@
-tesseract-ocr      
-tesseract-ocr-eng   
-tesseract-ocr-kor  
+
+tesseract-ocr
+tesseract-ocr-eng
+tesseract-ocr-kor
+
+chromium-browser       
+chromium-chromedriver  
